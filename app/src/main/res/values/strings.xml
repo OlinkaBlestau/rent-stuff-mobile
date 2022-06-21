@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Petsfromshelter</string>
+    <string name="registration_title">Реєстрація</string>
+    <string name="registration_name">Ім`я</string>
+    <string name="registration_phone">Телефон</string>
+    <string name="registration_email">Пошта</string>
+    <string name="registration_password">Пароль</string>
+    <string name="registration_button"><u>Зареєструватися</u></string>
+    <string name="registration_surname">Прізвище</string>
+
+    <string name="registration_landlord">Орендодавець</string>
+
+    <string name="registration_renting">Орендатор</string>
+
+    <string name="signup_title">Авторизація</string>
+    <string name="singup_button">Увійти</string>
+    <string name="title_activity_shelter">ShelterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="create_shelter_title">Створення притулку</string>
+    <string name="shelter_name">Назва притулку</string>
+    <string name="shelter_longitude">Довгота</string>
+    <string name="shelter_latitude">Широта</string>
+    <string name="shelter_url">Посилання на сайт</string>
+    <string name="shelter_create">Створити</string>
+    <string name="shelter_title">Дані про ваш притулок</string>
+    <string name="shelter_change">Змінити</string>
+    <string name="title_activity_shelter_maps">Map</string>
+    <string name="title_activity_user_shelter">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pets">Тварини</string>
+    <string name="shelter">О притулку</string>
+    <string name="settings">Налаштування</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shelter_main_title">Притулок</string>
+    <string name="pets_main_title">Тварини</string>
+    <string-array name="species">
+        <item>-</item>
+        <item>Собака</item>
+        <item>Кіт</item>
+    </string-array>
+    <string-array name="sorting">
+        <item>-</item>
+        <item>За ім`ям</item>
+        <item>За віком</item>
+        <item>Хлопчики</item>
+        <item>Дівчинки</item>
+    </string-array>
+</resources>
