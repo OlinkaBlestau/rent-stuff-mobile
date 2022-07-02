@@ -3,6 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.2225" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/drawable/ic_dashboard.xml" value="0.2225" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/drawable/ic_place.xml" value="0.2225" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout-land/activity_announcement.xml" value="0.38645833333333335" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout-land/activity_create_shop.xml" value="0.264" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout-land/activity_full_info_announcement.xml" value="0.2" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout-land/activity_main.xml" value="0.38645833333333335" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout-land/activity_registration.xml" value="0.2" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout-land/activity_view_profile.xml" value="0.264" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_announcement.xml" value="0.264" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_create_shop.xml" value="0.253125" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_full_info_announcement.xml" value="0.25416666666666665" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_my_announcement.xml" value="0.253125" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_registration.xml" value="0.264" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_shop_maps.xml" value="0.25416666666666665" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_view_info_shop.xml" value="0.253125" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_view_profile.xml" value="0.23809523809523808" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/activity_view_shop.xml" value="0.19427083333333334" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/fragment_announcement.xml" value="0.1425925925925926" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/fragment_map.xml" value="0.25416666666666665" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/layout/map_custom_marker.xml" value="0.2569558101472995" />
+        <entry key="..\:/rent-stuff-mobile/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.253125" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.38697916666666665" />
         <entry key="app/src/main/res/layout-land/activity_registration.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />

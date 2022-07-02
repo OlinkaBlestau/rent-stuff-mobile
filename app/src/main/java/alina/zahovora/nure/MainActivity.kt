@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,11 +22,17 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private var authToken: String? = null
+        private var userId: Int? = null
 
         fun setAuthToken(value: String){
             authToken = value
         }
         fun getAuthToken(): String? = this.authToken
+
+        fun setUserId(value: Int){
+            userId = value
+        }
+        fun getUserId(): Int? = this.userId
     }
 
     fun login (view: View){
@@ -37,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             email.text.toString(),
             password.text.toString()
         )
-        //val intent = Intent(this, PlacesListActivity::class.java)
+        val intent = Intent(this, BottomNavigationActivity::class.java)
         val apiService = Login.retrofitService
 
         apiService.login(user).enqueue(object : Callback<UserLoginResponse> {
@@ -50,11 +57,15 @@ class MainActivity : AppCompatActivity() {
                 call: Call<UserLoginResponse>,
                 response: Response<UserLoginResponse>
             ) {
+                println(response.body())
+                println(response.code())
                 if (response.code() == HttpURLConnection.HTTP_OK) {
                     setAuthToken("Bearer " + response.body()?.token)
-                //    startActivity(intent)
+                    setUserId(response.body()?.userId!!)
 
-                    println(response.body())
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(view.context, "Invalid credentials", Toast.LENGTH_SHORT).show()
                 }
             }
         })

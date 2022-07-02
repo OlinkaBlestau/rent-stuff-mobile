@@ -1,16 +1,48 @@
 <resources>
-    <string name="app_name">Petsfromshelter</string>
+    <string name="app_name">RentStuff</string>
     <string name="registration_title">Реєстрація</string>
     <string name="registration_name">Ім`я</string>
     <string name="registration_phone">Телефон</string>
     <string name="registration_email">Пошта</string>
     <string name="registration_password">Пароль</string>
     <string name="registration_button"><u>Зареєструватися</u></string>
+    <string name="auth_button"><u>Авторизуватись</u></string>
     <string name="registration_surname">Прізвище</string>
-
+    <string name="photo">Фото</string>
     <string name="registration_landlord">Орендодавець</string>
-
+    <string name="announcement_name">Назва:</string>
+    <string name="announcement_category">Категорія:</string>
+    <string name="announcement_btn">Орендувати</string>
     <string name="registration_renting">Орендатор</string>
+
+    <string name="view_profile_title">Перегляд профілю</string>
+    <string name="view_profile_btn">Редагувати</string>
+
+    <string name="view_shop_title">Перегляд магазину</string>
+    <string name="view_shop_name">Назва</string>
+    <string name="view_shop_phone">Телефон</string>
+    <string name="view_shop_email">Email</string>
+    <string name="view_shop_address">Адреса</string>
+    <string name="view_shop_longitude">Довгота</string>
+    <string name="view_shop_latitude">Штрота</string>
+    <string name="view_shop_description">Опис</string>
+    <string name="view_shop_btn">Речі цього магазину</string>
+
+    <string name="view_full_info_announcement">Повна інформація про річ</string>
+    <string name="view_full_info_name">Назва</string>
+    <string name="view_full_info_price">Ціна</string>
+    <string name="view_full_info_category">Категорія</string>
+    <string name="view_full_info_description">Опис</string>
+
+    <string name="view_info_shop_title">Інформація про магазин</string>
+    <string name="view_info_shop_name">Назва</string>
+    <string name="view_info_shop_phone">Телефон</string>
+    <string name="view_info_shop_email">Email</string>
+    <string name="view_info_shop_address">Адреса</string>
+    <string name="view_info_shop_longitude">Довгота</string>
+    <string name="view_info_shop_latitude">Штрота</string>
+    <string name="view_info_shop_description">Опис</string>
+
 
     <string name="signup_title">Авторизація</string>
     <string name="singup_button">Увійти</string>
@@ -55,4 +87,5 @@
         <item>Хлопчики</item>
         <item>Дівчинки</item>
     </string-array>
+    <string name="title_activity_shop_maps">ShopMapsActivity</string>
 </resources>
