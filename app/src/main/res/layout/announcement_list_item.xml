@@ -85,7 +85,7 @@
             app:layout_constraintVertical_bias="0.6" />
 
         <TextView
-            android:id="@+id/working_hours_end"
+            android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -100,7 +100,7 @@
             app:layout_constraintVertical_bias="0.883" />
 
         <ImageView
-            android:id="@+id/edit"
+            android:id="@+id/image"
             android:layout_width="113dp"
             android:layout_height="71dp"
             android:layout_marginLeft="10dp"
@@ -115,7 +115,7 @@
             app:layout_constraintVertical_bias="0.241" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/rent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"

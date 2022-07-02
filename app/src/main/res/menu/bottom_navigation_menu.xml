@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_map"
+        android:title="Мапа"  />
+
+    <item
         android:id="@+id/announcement"
         android:icon="@drawable/ic_list"
         android:title="Всі оголошення" />

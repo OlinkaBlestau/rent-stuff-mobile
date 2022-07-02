@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E3DBDA"
-    tools:context=".ViewShop">
+    tools:context=".fragment.ViewInfoShopFragment">
 
 
     <TextView
@@ -195,21 +195,6 @@
         app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#C7B9B7"
-        android:fontFamily="@font/rubik_light"
-        android:text="@string/view_shop_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
         app:layout_constraintVertical_bias="0.0" />
 
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/filteredBlock"
+        android:layout_width="370dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sortingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/rubik_light"
+            android:textColor="@color/black"
+            android:text="Сортування" />
+
+        <Spinner
+            android:id="@+id/spinnerSorting"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/sorting" />
+
+        <TextView
+            android:id="@+id/filtrationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/rubik_light"
+            android:textColor="@color/black"
+            android:text="Фільтрація" />
+
+
+        <Spinner
+            android:id="@+id/spinnerSpecies"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:entries="@array/species" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/announcements_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
