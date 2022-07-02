@@ -46,13 +46,13 @@
 
 
         <Spinner
-            android:id="@+id/spinnerSpecies"
+            android:id="@+id/spinnerFilter"
             android:layout_width="199dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:entries="@array/species" />
+            android:entries="@array/filter" />
 
 
     </LinearLayout>

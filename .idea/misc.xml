@@ -50,6 +50,7 @@
         <entry key="app/src/main/res/layout/fragment_map.xml" value="0.11794871794871795" />
         <entry key="app/src/main/res/layout/fragment_shop_announcements.xml" value="0.3671875" />
         <entry key="app/src/main/res/layout/fragment_view_info_shop.xml" value="0.3671875" />
+        <entry key="app/src/main/res/layout/map_custom_marker.xml" value="0.3671875" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.24731182795698925" />
         <entry key="app/src/main/res/xml/network_security_config.xml" value="0.35625" />
       </map>

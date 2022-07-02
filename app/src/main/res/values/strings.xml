@@ -75,17 +75,22 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="shelter_main_title">Притулок</string>
     <string name="pets_main_title">Тварини</string>
-    <string-array name="species">
+    <string-array name="filter">
         <item>-</item>
-        <item>Собака</item>
-        <item>Кіт</item>
+        <item>Техніка для дома</item>
+        <item>Фото та відео</item>
+        <item>Інструменти</item>
+        <item>Музичні інструменти</item>
+        <item>Спортивні тренажери</item>
+        <item>Спорт та відпочинок</item>
+        <item>Устаткування для заходів</item>
+        <item>Електроніка</item>
+        <item>Ігри та консолі</item>
     </string-array>
     <string-array name="sorting">
         <item>-</item>
-        <item>За ім`ям</item>
-        <item>За віком</item>
-        <item>Хлопчики</item>
-        <item>Дівчинки</item>
+        <item>Вартність ↑</item>
+        <item>Вартність ↓</item>
     </string-array>
     <string name="title_activity_shop_maps">ShopMapsActivity</string>
 </resources>

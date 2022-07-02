@@ -60,7 +60,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:entries="@array/species" />
+            android:entries="@array/filter" />
 
 
     </LinearLayout>
