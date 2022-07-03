@@ -50,6 +50,7 @@ class AnnouncementsListAdapter(
         val categoryTextView = rowView.findViewById(R.id.category) as TextView
         val dateTextView = rowView.findViewById(R.id.date) as TextView
         val rentButton = rowView.findViewById(R.id.rent) as Button
+        val alreadyRent = rowView.findViewById(R.id.alreadyRent) as TextView
         val image = rowView.findViewById(R.id.image) as ImageView
 
         //Set up values for list item
@@ -68,6 +69,11 @@ class AnnouncementsListAdapter(
             val intent = Intent(context, FullInfoAnnouncementActivity::class.java)
             intent.putExtra("announcementId", announcement.id)
             context.startActivity(intent)
+        }
+
+        rentButton.setOnClickListener {
+            rentButton.visibility = View.INVISIBLE
+            alreadyRent.visibility = View.VISIBLE
         }
 
         return rowView
