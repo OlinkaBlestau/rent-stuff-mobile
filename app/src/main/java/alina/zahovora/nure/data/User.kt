@@ -7,5 +7,6 @@ data class User(
     var email: String,
     var phone: String,
     var password: String,
-    var photo: String
+    var photo: String,
+    var shop: Shop,
 ): Serializable

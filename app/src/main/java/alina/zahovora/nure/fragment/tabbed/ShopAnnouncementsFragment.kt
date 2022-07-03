@@ -7,16 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import alina.zahovora.nure.R
 import alina.zahovora.nure.adapter.AnnouncementsListAdapter
-import alina.zahovora.nure.api.objects.GetAllShops
 import alina.zahovora.nure.api.objects.GetAnnouncementsByShopId
 import alina.zahovora.nure.data.Announcement
 import alina.zahovora.nure.data.Shop
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Spinner
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

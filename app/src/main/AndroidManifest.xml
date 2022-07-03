@@ -25,6 +25,9 @@
             android:name=".TabbedMenuActivity"
             android:exported="false" />
         <activity
+            android:name=".AdminTabbedMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewInfoShopActivity"
             android:exported="false" />
         <!--

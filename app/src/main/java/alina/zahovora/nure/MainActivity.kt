@@ -44,7 +44,9 @@ class MainActivity : AppCompatActivity() {
             email.text.toString(),
             password.text.toString()
         )
-        val intent = Intent(this, BottomNavigationActivity::class.java)
+        val rentingIntent = Intent(this, BottomNavigationActivity::class.java)
+        val landlordIntent = Intent(this, AdminTabbedMenuActivity::class.java)
+
         val apiService = Login.retrofitService
 
         apiService.login(user).enqueue(object : Callback<UserLoginResponse> {
@@ -62,6 +64,11 @@ class MainActivity : AppCompatActivity() {
                 if (response.code() == HttpURLConnection.HTTP_OK) {
                     setAuthToken("Bearer " + response.body()?.token)
                     setUserId(response.body()?.userId!!)
+
+                    when (response.body()!!.role) {
+                        "renting" -> startActivity(rentingIntent)
+                        "landlord" -> startActivity(landlordIntent)
+                    }
 
                     startActivity(intent)
                 } else {

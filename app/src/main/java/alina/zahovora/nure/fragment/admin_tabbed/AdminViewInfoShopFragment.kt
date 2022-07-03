@@ -1,4 +1,4 @@
-package alina.zahovora.nure.fragment.tabbed
+package alina.zahovora.nure.fragment.admin_tabbed
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import alina.zahovora.nure.R
-import alina.zahovora.nure.adapter.AnnouncementsListAdapter
 import alina.zahovora.nure.api.objects.GetAnnouncementsByShopId
 import alina.zahovora.nure.data.Shop
-import android.widget.ListView
+import alina.zahovora.nure.fragment.tabbed.ViewInfoShopFragment
 import android.widget.TextView
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,10 +17,10 @@ import retrofit2.Response
 private const val SHOP_ID = "shopId"
 /**
  * A simple [Fragment] subclass.
- * Use the [ViewInfoShopFragment.newInstance] factory method to
+ * Use the [AdminViewInfoShopFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ViewInfoShopFragment : Fragment() {
+class AdminViewInfoShopFragment : Fragment() {
     private var shopId: Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,12 +34,13 @@ class ViewInfoShopFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =  inflater.inflate(R.layout.fragment_view_info_shop, container, false)
+        val view =  inflater.inflate(R.layout.fragment_admin_view_info_shop, container, false)
 
         getShop(view, shopId!!)
 
         return view
     }
+
 
     companion object {
         @JvmStatic
@@ -72,12 +72,16 @@ class ViewInfoShopFragment : Fragment() {
                 val shopPhone = view.findViewById<TextView>(R.id.textViewPhone)
                 val shopEmail = view.findViewById<TextView>(R.id.textViewEmail)
                 val shopDescription = view.findViewById<TextView>(R.id.textViewDescription)
+                val shopLongitude = view.findViewById<TextView>(R.id.textViewLongitude)
+                val shopLatitude = view.findViewById<TextView>(R.id.textViewLatitude)
 
                 shopName.text = response.body()?.name
                 shopAddress.text = response.body()?.address
                 shopPhone.text = response.body()?.phone
                 shopEmail.text = response.body()?.email
                 shopDescription.text = response.body()?.description
+                shopLongitude.text = response.body()?.longitude.toString()
+                shopLatitude.text = response.body()?.latitude.toString()
             }
         })
     }
