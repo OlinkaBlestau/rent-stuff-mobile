@@ -4,15 +4,15 @@
     <item
         android:id="@+id/map"
         android:icon="@drawable/ic_map"
-        android:title="Мапа"  />
+        android:title="@string/map"  />
 
     <item
         android:id="@+id/announcement"
         android:icon="@drawable/ic_list"
-        android:title="Всі оголошення" />
+        android:title="@string/all_ann_itm" />
 
     <item
         android:id="@+id/profile"
         android:icon="@drawable/ic_baseline_person"
-        android:title="Профіль" />
+        android:title="@string/profile" />
 </menu>

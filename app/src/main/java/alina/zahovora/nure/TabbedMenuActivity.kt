@@ -34,8 +34,8 @@ class TabbedMenuActivity : AppCompatActivity() {
         viewInfoShopFragment.arguments = args
         shopAnnouncementsFragment.arguments = args
 
-        adapter.addFragment(viewInfoShopFragment, "Shops info")
-        adapter.addFragment(shopAnnouncementsFragment, "Announcements")
+        adapter.addFragment(viewInfoShopFragment, "Store")
+        adapter.addFragment(shopAnnouncementsFragment, "Announcement")
 
         pager.adapter = adapter
         tab.setupWithViewPager(pager)

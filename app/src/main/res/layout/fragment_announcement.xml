@@ -28,18 +28,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:textSize="20sp"
             android:fontFamily="@font/rubik_light"
+            android:text="Сортування"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:text="Сортування" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/spinnerSorting"
-            android:layout_width="199dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textSize="20sp"
-            android:layout_marginLeft="10dp"
+            android:background="#F2F0F5"
+            android:layout_marginLeft="20dp"
             android:entries="@array/sorting" />
 
         <TextView
@@ -48,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textSize="20sp"
+            android:textAlignment="center"
             android:fontFamily="@font/rubik_light"
             android:textColor="@color/black"
             android:text="Фільтрація" />
@@ -55,11 +58,13 @@
 
         <Spinner
             android:id="@+id/spinnerSpecies"
-            android:layout_width="199dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
             android:textSize="20sp"
+            android:background="#F2F0F5"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
             android:entries="@array/filter" />
 
 
@@ -70,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="115dp"
             android:clickable="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

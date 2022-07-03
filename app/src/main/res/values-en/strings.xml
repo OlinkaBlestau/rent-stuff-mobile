@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RentStuff</string>
+    <string name="registration_title">Registration</string>
+    <string name="registration_button"><u>Зареєструватися</u></string>
+    <string name="registration_name">Name</string>
+    <string name="registration_phone">Phone</string>
+    <string name="registration_email">Email</string>
+    <string name="registration_password">Password</string>
+    <string name="auth_button"><u>Log in</u></string>
+    <string name="registration_surname">Surname</string>
+    <string name="photo">Photo</string>
+    <string name="registration_landlord">Landlord</string>
+    <string name="announcement_name">Name:</string>
+    <string name="announcement_category">Category:</string>
+    <string name="announcement_btn">Rent</string>
+    <string name="registration_renting">Renting</string>
+    <string name="rented">Rented</string>
+
+    <string name="sorting">Sorting</string>
+    <string name="filtration">Filtration</string>
+
+    <string name="map">Map</string>
+    <string name="all_ann_itm">All Announcement</string>
+    <string name="profile">Profile</string>
+
+
+    <string name="view_profile_title">View Profile</string>
+    <string name="view_profile_btn">Редагувати</string>
+
+    <string name="view_shop_title">View Shop</string>
+    <string name="view_shop_name">Name</string>
+    <string name="view_shop_phone">Phone</string>
+    <string name="view_shop_email">Email</string>
+    <string name="view_shop_address">Address</string>
+    <string name="view_shop_longitude">Longitude</string>
+    <string name="view_shop_latitude">Latitude</string>
+    <string name="view_shop_description">Description</string>
+    <string name="view_shop_btn">Items of this store</string>
+
+    <string name="view_full_info_announcement">Full information about the item</string>
+    <string name="view_full_info_name">Name</string>
+    <string name="view_full_info_price">Price</string>
+    <string name="view_full_info_category">Category</string>
+    <string name="view_full_info_description">Description</string>
+
+    <string name="view_info_shop_title">Information about the store</string>
+    <string name="view_info_shop_name">Name</string>
+    <string name="view_info_shop_phone">Phone</string>
+    <string name="view_info_shop_email">Email</string>
+    <string name="view_info_shop_address">Address</string>
+    <string name="view_info_shop_longitude">Longitude</string>
+    <string name="view_info_shop_latitude">Latitude</string>
+    <string name="view_info_shop_description">Description</string>
+
+
+    <string name="signup_title">Authorization</string>
+    <string name="singup_button">Enter</string>
+    <string name="title_activity_shelter">ShelterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="create_shelter_title">Створення притулку</string>
+    <string name="shelter_name">Назва притулку</string>
+    <string name="shelter_longitude">Довгота</string>
+    <string name="shelter_latitude">Широта</string>
+    <string name="shelter_url">Посилання на сайт</string>
+    <string name="shelter_create">Створити</string>
+    <string name="shelter_title">Дані про ваш притулок</string>
+    <string name="shelter_change">Змінити</string>
+    <string name="title_activity_shelter_maps">Map</string>
+    <string name="title_activity_user_shelter">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pets">Тварини</string>
+    <string name="shelter">О притулку</string>
+    <string name="settings">Налаштування</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shelter_main_title">Притулок</string>
+    <string name="pets_main_title">Тварини</string>
+    <string-array name="filter">
+        <item>-</item>
+        <item>Home appliances</item>
+        <item>Фото та відео</item>
+        <item>Photo and video</item>
+        <item>Musical Instruments</item>
+        <item>Sports simulators</item>
+        <item>Sports and recreation</item>
+        <item>Устаткування для заходів</item>
+        <item>Electronics</item>
+        <item>Games and consoles</item>
+    </string-array>
+    <string-array name="sorting">
+        <item>-</item>
+        <item>Price ↑</item>
+        <item>Price ↓</item>
+    </string-array>
+    <string name="title_activity_shop_maps">ShopMapsActivity</string>
+</resources>

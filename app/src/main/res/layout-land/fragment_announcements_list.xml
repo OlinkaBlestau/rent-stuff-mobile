@@ -23,7 +23,7 @@
             android:layout_marginLeft="120dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/rubik_light"
-            android:text="@string/sorting"
+            android:text="Сортування"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -32,7 +32,7 @@
             android:id="@+id/spinnerSorting"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="8dp"
             android:background="#F2F0F5"
             android:entries="@array/sorting"
@@ -45,7 +45,7 @@
             android:layout_marginLeft="120dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/rubik_light"
-            android:text="@string/filtration"
+            android:text="Фільтрація"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -54,7 +54,7 @@
             android:id="@+id/spinnerFilter"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="8dp"
             android:background="#F2F0F5"
             android:entries="@array/filter"

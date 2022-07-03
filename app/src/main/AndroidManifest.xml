@@ -27,9 +27,7 @@
         <activity
             android:name=".AdminTabbedMenuActivity"
             android:exported="false" />
-        <activity
-            android:name=".ViewInfoShopActivity"
-            android:exported="false" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -45,10 +43,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
 
-        <activity
-            android:name=".ShopMapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_shop_maps" />
         <activity
             android:name=".BottomNavigationActivity"
             android:exported="false" />
