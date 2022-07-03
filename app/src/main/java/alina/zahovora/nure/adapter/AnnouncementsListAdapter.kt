@@ -57,10 +57,7 @@ class AnnouncementsListAdapter(
 
         nameTextView.text = announcement.name
 
-        categoryTextView.text = when(announcement.category) {
-            null -> announcement.category_id.toString()
-            else -> announcement.category!!.name
-        }
+        categoryTextView.text = announcement.category.name
         dateTextView.text = announcement.created_at.toString()
 
         Glide.with(rowView.context)

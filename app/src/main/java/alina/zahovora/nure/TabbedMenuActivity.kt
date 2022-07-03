@@ -2,8 +2,8 @@ package alina.zahovora.nure
 
 import alina.zahovora.nure.adapter.ViewPagerAdapter
 import alina.zahovora.nure.data.Shop
-import alina.zahovora.nure.fragment.ShopAnnouncementsFragment
-import alina.zahovora.nure.fragment.ViewInfoShopFragment
+import alina.zahovora.nure.fragment.tabbed.ShopAnnouncementsFragment
+import alina.zahovora.nure.fragment.tabbed.ViewInfoShopFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar

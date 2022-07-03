@@ -1,4 +1,4 @@
-package alina.zahovora.nure.fragment
+package alina.zahovora.nure.fragment.tabbed
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

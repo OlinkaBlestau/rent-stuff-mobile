@@ -11,6 +11,6 @@ data class Announcement(
     var shop_id: Int,
     var category_id: Int,
     var created_at: Date,
-    var category: Category?,
+    var category: Category,
     var shop: Shop?,
 ): Serializable

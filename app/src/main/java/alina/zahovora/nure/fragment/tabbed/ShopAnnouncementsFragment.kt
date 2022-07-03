@@ -1,4 +1,4 @@
-package alina.zahovora.nure.fragment
+package alina.zahovora.nure.fragment.tabbed
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,22 +7,39 @@ import android.view.View
 import android.view.ViewGroup
 import alina.zahovora.nure.R
 import alina.zahovora.nure.adapter.AnnouncementsListAdapter
-import alina.zahovora.nure.api.objects.GetAllAnnouncements
+import alina.zahovora.nure.api.objects.GetAllShops
+import alina.zahovora.nure.api.objects.GetAnnouncementsByShopId
 import alina.zahovora.nure.data.Announcement
+import alina.zahovora.nure.data.Shop
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Spinner
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
+import com.google.android.gms.maps.model.MarkerOptions
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class AnnouncementFragment : Fragment() {
+private const val SHOP_ID = "shopId"
+
+/**
+ * A simple [Fragment] subclass.
+ * Use the [ShopAnnouncementsFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class ShopAnnouncementsFragment : Fragment() {
+    private var shopId: Int? = null
     private var sort: Spinner? = null
     private var filter: Spinner? = null
     private var rootView: View? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        arguments?.let {
+            shopId = it.getInt(SHOP_ID)
+        }
     }
 
     override fun onCreateView(
@@ -43,7 +60,7 @@ class AnnouncementFragment : Fragment() {
                 position: Int,
                 id: Long
             ) {
-                getAnnouncements(rootView!!)
+                getAnnouncements(rootView!!, shopId!!)
             }
         }
 
@@ -56,32 +73,42 @@ class AnnouncementFragment : Fragment() {
                 position: Int,
                 id: Long
             ) {
-                getAnnouncements(rootView!!)
+                getAnnouncements(rootView!!, shopId!!)
             }
         }
 
-        getAnnouncements(rootView!!)
+        getAnnouncements(rootView!!, shopId!!)
         return rootView
     }
 
-    private fun getAnnouncements(view: View) {
-        val apiService = GetAllAnnouncements.retrofitService;
-        apiService.getAllAnnouncements().enqueue(object : Callback<ArrayList<Announcement>> {
-            override fun onFailure(call: Call<ArrayList<Announcement>>, t: Throwable) {
+    companion object {
+        @JvmStatic
+        fun newInstance(shopId: Int) =
+            ShopAnnouncementsFragment().apply {
+                arguments = Bundle().apply {
+                    putInt(SHOP_ID, shopId)
+                }
+            }
+    }
+
+    private fun getAnnouncements(view: View, shopId: Int) {
+        val apiService = GetAnnouncementsByShopId.retrofitService;
+        apiService.getAnnouncementByShopId(shopId).enqueue(object : Callback<Shop> {
+            override fun onFailure(call: Call<Shop>, t: Throwable) {
                 println(t.message)
                 println(t.stackTrace)
             }
 
             override fun onResponse(
-                call: Call<ArrayList<Announcement>>,
-                response: Response<ArrayList<Announcement>>
+                call: Call<Shop>,
+                response: Response<Shop>
             ) {
                 println(response.code())
                 println(response.body())
 
                 val sortItem = sort?.selectedItem.toString()
                 val filterItem = filter?.selectedItem.toString()
-                var announcements: ArrayList<Announcement> = response.body()!!
+                var announcements: ArrayList<Announcement> = response.body()!!.thing!!
 
                 println(sortItem)
                 println(filterItem)
